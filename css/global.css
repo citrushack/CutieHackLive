@@ -1,0 +1,115 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+/* Global body styles */
+body {
+  margin: 2rem auto 4rem;
+  padding: 0 4rem;
+  color: #fff;
+  font-family: "Fugaz One", cursive;
+  background-color: rgb(238, 154, 106);
+  line-height: 1.6;
+  max-width: 50rem;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 1), 1px -1px 0 rgba(0, 0, 0, 1),
+    -1px 1px 0 rgba(0, 0, 0, 1), 1px 1px 0 rgba(0, 0, 0, 1),
+    6px 6px 0 rgba(0, 0, 0, 1);
+  font-size: 3em;
+  padding: 1rem 0;
+}
+
+/* Header */
+header {
+  margin: auto;
+  max-width: 40rem;
+}
+
+header div {
+  background-color: #b0e7e8;
+  border-radius: 40px;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.45), 0px 0px 0px 1px #000;
+}
+
+/* Global section styles */
+section h1,
+footer h1 {
+  border-bottom: 1px solid #000;
+  margin: 1rem 4rem;
+}
+
+/* Clock */
+.clock {
+  /* background image */
+  box-shadow: none;
+}
+.clock h1 {
+  border: none;
+}
+
+/* Schedule */
+.schedule {
+  background-color: #f9f9ba;
+  min-height: 40vh;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.45);
+  transition: all 0.2s ease;
+}
+
+/* Resources and Judges */
+.resourcesJudges {
+  display: flex;
+  box-shadow: none;
+  margin-bottom: 40px;
+}
+
+.resources,
+.judges {
+  flex: 1;
+  border-radius: 25px;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.45);
+  min-height: 40vh;
+  transition: all 0.2s ease;
+}
+
+.resources {
+  background-color: #baf9e6;
+  margin-right: 20px;
+}
+
+.judges {
+  background-color: #a9d4fc;
+  margin-left: 20px;
+}
+
+/* Sponsors */
+footer {
+  background-color: #e17878;
+  border-radius: 25px;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.45);
+  min-height: 40vh;
+  transition: all 0.2s ease;
+}
+
+/* Box shadow hover animation */
+.schedule:hover,
+.resources:hover,
+.judges:hover,
+footer:hover {
+  box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.45);
+  transform: translateX(-5px);
+}
+
+/* Mobile rules */
+@media screen and (max-width: 868px) {
+  .resourcesJudges {
+    flex-direction: column;
+  }
+  .resources,
+  .judges {
+    margin: 20px 0 20px 0;
+  }
+}
