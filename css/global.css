@@ -8,6 +8,7 @@ body {
   color: #fff;
   font-family: "Fugaz One", cursive;
   background-color: rgb(238, 154, 106);
+  background-image: url(/images/backgrounds/cardboard-flat.png);
   line-height: 1.6;
   max-width: 60rem;
 }
@@ -28,9 +29,20 @@ header {
 }
 
 header div {
+  max-height: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   background-color: #b0e7e8;
+  background-image: url(/images/backgrounds/asfalt-dark.png);
   border-radius: 40px;
   box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.45), 0px 0px 0px 1px #000;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
 }
 
 /* Global section styles */
@@ -42,9 +54,14 @@ footer h1 {
 
 /* Clock */
 .clock {
-  /* background image */
-  box-shadow: none;
+  background-color: #dfffcc;
+  background-image: url(/images/backgrounds/always-grey.png);
+  border-radius: 25px;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.45);
+  margin: 4rem 0;
+  transition: all 0.2s ease;
 }
+
 .clock h1 {
   border: none;
 }
@@ -52,7 +69,7 @@ footer h1 {
 /* Schedule */
 .schedule {
   background-color: #f9f9ba;
-
+  background-image: url(/images/backgrounds/asfalt-dark.png);
   border-radius: 4px;
   margin-bottom: 40px;
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.45);
@@ -68,7 +85,7 @@ table {
   border-collapse: collapse;
 }
 
-tr{
+tr {
   text-align: center;
 }
 th {
@@ -81,10 +98,12 @@ td {
   padding: 10px 5px;
   border: 2px solid rgba(236, 180, 140, 0.5);
 }
-td:nth-child(1){
+td:nth-child(1) {
   width: 2rem;
 }
-td:nth-child(2),td:nth-child(3),td:nth-child(4){
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4) {
   width: 33%;
 }
 /* Resources and Judges */
@@ -105,24 +124,34 @@ td:nth-child(2),td:nth-child(3),td:nth-child(4){
 
 .resources {
   background-color: #baf9e6;
+  background-image: url(/images/backgrounds/asfalt-dark.png);
   margin-right: 20px;
 }
 
 .judges {
   background-color: #a9d4fc;
+  background-image: url(/images/backgrounds/asfalt-dark.png);
   margin-left: 20px;
 }
 
 /* Sponsors */
 footer {
   background-color: #e17878;
+  background-image: url(/images/backgrounds/asfalt-dark.png);
   border-radius: 25px;
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.45);
   min-height: 40vh;
   transition: all 0.2s ease;
 }
 
+footer img {
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
 /* Box shadow hover animation */
+.clock:hover,
 .schedule:hover,
 .resources:hover,
 .judges:hover,
@@ -133,11 +162,11 @@ footer:hover {
 
 /* Mobile rules */
 @media screen and (max-width: 868px) {
-  h1{
+  h1 {
     font-size: 2rem;
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 1), 1px -1px 0 rgba(0, 0, 0, 1),
-    -1px 1px 0 rgba(0, 0, 0, 1), 1px 1px 0 rgba(0, 0, 0, 1),
-    4px 4px 0 rgba(0, 0, 0, 1);
+      -1px 1px 0 rgba(0, 0, 0, 1), 1px 1px 0 rgba(0, 0, 0, 1),
+      4px 4px 0 rgba(0, 0, 0, 1);
   }
   .resourcesJudges {
     flex-direction: column;
