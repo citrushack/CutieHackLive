@@ -4,11 +4,11 @@
 /* Global body styles */
 body {
   margin: 2rem auto 4rem;
-  padding: 0 4rem;
+  padding: 0 2rem;
   color: #fff;
   font-family: "Fugaz One", cursive;
   background-color: rgb(238, 154, 106);
-  background-image: url(/images/backgrounds/cardboard-flat.png);
+  background-image: url(/images/backgrounds/worn-dots.png);
   line-height: 1.6;
   max-width: 60rem;
 }
@@ -46,6 +46,10 @@ header img {
 }
 
 /* Global section styles */
+section {
+  margin-bottom: 40px;
+}
+
 section h1,
 footer h1 {
   border-bottom: 1px solid #000;
@@ -71,7 +75,6 @@ footer h1 {
   background-color: #f9f9ba;
   background-image: url(/images/backgrounds/asfalt-dark.png);
   border-radius: 4px;
-  margin-bottom: 40px;
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.45);
   transition: all 0.2s ease;
 }
@@ -107,15 +110,9 @@ td:nth-child(4) {
   width: 33%;
 }
 /* Resources and Judges */
-.resourcesJudges {
-  display: flex;
-  box-shadow: none;
-  margin-bottom: 40px;
-}
 
 .resources,
 .judges {
-  flex: 1;
   border-radius: 25px;
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.45);
   min-height: 40vh;
@@ -124,14 +121,43 @@ td:nth-child(4) {
 
 .resources {
   background-color: #baf9e6;
-  background-image: url(/images/backgrounds/asfalt-dark.png);
-  margin-right: 20px;
 }
 
 .judges {
   background-color: #a9d4fc;
   background-image: url(/images/backgrounds/asfalt-dark.png);
-  margin-left: 20px;
+  padding: 0 30px;
+}
+.judgeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+.judgeList {
+  flex: 1;
+}
+
+.judge {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 5px;
+}
+
+.judge p {
+  color: rgb(28, 27, 46);
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.judge img {
+  margin-right: 20px;
+  max-width: 75px;
+  max-height: 75px;
+  border-radius: 50%;
+  border: 2px solid #fff;
 }
 
 /* Sponsors */
@@ -174,5 +200,8 @@ footer:hover {
   .resources,
   .judges {
     margin: 20px 0 20px 0;
+  }
+  .judgeContainer{
+    flex-direction: column;
   }
 }
