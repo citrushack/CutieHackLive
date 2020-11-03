@@ -276,11 +276,11 @@ footer:hover {
     flex-direction: column;
   }
   footer img{
-    max-width:none;
-    height:200px;
+    max-width:100%;
+    height:auto;
   }
   .wolfram, .usaf{
-    max-width:none;
+    max-width:100%;
     height:270px;
   }
   body{
@@ -302,5 +302,19 @@ footer:hover {
     margin-top:0;
     margin-bottom:0;
     box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.45);
+  }
+  .clock{
+    margin-top:15px;
+  }
+  #timer{
+    margin: 0;
+  }
+  .navLink {
+    padding: 0.33rem;
+  }
+  
+  header img {
+    width: 60px;
+    height: 60px;
   }
 }
