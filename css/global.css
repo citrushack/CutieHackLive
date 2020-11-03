@@ -1,23 +1,21 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
-
-/* Global body styles */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');/* Global body styles */
 body {
   margin: 2rem auto 4rem;
   padding: 0 2rem;
   color: #fff;
   font-family: "Fugaz One", cursive;
-  background-color: rgb(238, 154, 106);
-  background-image: url(/images/backgrounds/worn-dots.png);
+  background: url(/images/backgrounds/cork.jpg);
   line-height: 1.6;
   max-width: 60rem;
 }
 
 h1 {
   text-align: center;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 1), 1px -1px 0 rgba(0, 0, 0, 1),
-    -1px 1px 0 rgba(0, 0, 0, 1), 1px 1px 0 rgba(0, 0, 0, 1),
-    6px 6px 0 rgba(0, 0, 0, 1);
+  text-shadow: -1px -1px 0 #141414, 1px -1px 0 #141414,
+    -1px 1px 0 #141414, 1px 1px 0 #141414,
+    6px 6px 0 #141414;
   font-size: 3em;
   padding: 1rem 0;
 }
@@ -30,14 +28,15 @@ header {
 
 header div {
   max-height: 6rem;
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background-color: #b0e7e8;
-  background-image: url(/images/backgrounds/asfalt-dark.png);
-  border-radius: 40px;
-  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.45), 0px 0px 0px 1px #000;
+  background: rgb(176, 231, 232) none repeat scroll 0% 0%;
+  border: 5px solid rgb(148, 180, 181);
+  box-shadow: rgba(0, 0, 0, 0.45) 6px 6px 0px 0px;
+  border-radius: 50px;
 }
 
 header img {
@@ -52,7 +51,7 @@ section {
 
 section h1,
 footer h1 {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #494949;
   margin: 1rem 4rem;
 }
 
@@ -69,7 +68,35 @@ footer h1 {
 .clock h1 {
   border: none;
 }
-
+/* Nav Buttons */
+a {
+  text-decoration: none;
+}
+ul{
+  display:flex;
+}
+ ol, ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  padding: 0 4px;
+}
+.navLink {
+  border: 5px solid rgb(213, 166, 56);
+  font-size: 1em;
+  background: rgb(245, 187, 50) none repeat scroll 0% 0%;
+  padding: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 3px 3px 0px 0px;
+  border-radius: 22px;
+  font-family: "Fugaz One", cursive;
+  text-shadow: rgb(0, 0, 0) 1px 1px 0px, rgb(0, 0, 0) -1px -1px 0px, rgb(0, 0, 0) 1px -1px 0px, rgb(0, 0, 0) -1px 1px 0px, rgb(0, 0, 0) 2px 2px 0px;
+  font-weight: 400;
+  color: white;
+}
+.navLink:hover{
+  background: orange none repeat scroll 0% 0%;
+}
 /* Schedule */
 .schedule {
   background-color: #f9f9ba;
@@ -84,22 +111,24 @@ footer h1 {
   overflow-x: auto;
 }
 table {
-  width: 56rem;
+  max-width: 1200px;
+  background-color: #ffffff8f;
   border-collapse: collapse;
 }
 
 tr {
   text-align: center;
 }
-th {
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 1), 1px -1px 0 rgba(0, 0, 0, 1),
-    -1px 1px 0 rgba(0, 0, 0, 1), 1px 1px 0 rgba(0, 0, 0, 1);
+tr:first-child, td:first-child {
+  background-color: #ffffff42;
 }
-td {
-  font-weight: normal;
-  color: #000;
+
+th, td {
+  font-weight: bold;
+  color: #141414;
   padding: 10px 5px;
   border: 2px solid rgba(236, 180, 140, 0.5);
+  font-family: "Libre Baskerville",serif;
 }
 td:nth-child(1) {
   width: 2rem;
@@ -115,27 +144,54 @@ td:nth-child(4) {
 .judges {
   border-radius: 25px;
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.45);
-  min-height: 40vh;
   transition: all 0.2s ease;
+  padding: 0 30px;
+  padding-bottom: 30px;
 }
 
 .resources {
   background-color: #baf9e6;
   background-image: url(/images/backgrounds/asfalt-dark.png);
-  padding: 0 30px;
   text-align: center;
 }
 
 .resources p {
-  color: rgb(28, 27, 46);
+  color: #141414;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-family: 'Libre Baskerville', serif;
+  padding: 30px 0;
 
+}
+.resources h2 {
+  background-color: #adde8e;
+box-shadow: 0 5px 0 #87b868;
+color: white;
+padding: 1em 1.5em;
+position: relative;
+color: #141414;
+font-family: 'Libre Baskerville', serif;
+
+}
+.resources a{
+  text-decoration: none;
+
+}
+.arrowIcon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding-right: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 25%;
+}
+.resources h2:hover {
+background-color: #bcf896;
+cursor: pointer;
+}
 .judges {
   background-color: #a9d4fc;
   background-image: url(/images/backgrounds/asfalt-dark.png);
-  padding: 0 30px;
 }
 .judgeContainer {
   display: flex;
@@ -156,11 +212,13 @@ td:nth-child(4) {
 }
 
 .judge p {
-  color: rgb(28, 27, 46);
+  color: #141414;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
-
+.judge p b {
+  font-family: "Libre Baskerville",serif;
+}
 
 .judge img {
   margin-right: 20px;
@@ -181,11 +239,22 @@ footer {
 }
 
 footer img {
-  height: 200px;
-  display: block;
-  margin: 0 auto;
+  max-width: 430px;
+  height: auto;
 }
-
+.wolfram, .usaf{
+  max-width: 300px;
+}
+.sponsors {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
 /* Box shadow hover animation */
 .clock:hover,
 .resources:hover,
@@ -199,18 +268,39 @@ footer:hover {
 @media screen and (max-width: 868px) {
   h1 {
     font-size: 2rem;
-    text-shadow: -1px -1px 0 rgba(0, 0, 0, 1), 1px -1px 0 rgba(0, 0, 0, 1),
-      -1px 1px 0 rgba(0, 0, 0, 1), 1px 1px 0 rgba(0, 0, 0, 1),
-      4px 4px 0 rgba(0, 0, 0, 1);
+    text-shadow: -1px -1px 0 #141414, 1px -1px 0 #141414,
+      -1px 1px 0 #141414, 1px 1px 0 #141414,
+      4px 4px 0 #141414;
   }
   .resourcesJudges {
     flex-direction: column;
   }
-  .resources,
-  .judges {
-    margin: 20px 0 20px 0;
+  footer img{
+    max-width:none;
+    height:200px;
+  }
+  .wolfram, .usaf{
+    max-width:none;
+    height:270px;
+  }
+  body{
+    margin: 0;
+    padding: 0;
   }
   .judgeContainer{
     flex-direction: column;
+  }
+  .arrowIcon{
+    display: none;
+  }
+  header{
+    max-width: none;
+  }
+  header div, .clock, .schedule, footer, .resources,
+  .judges{
+    border-radius: 5px;
+    margin-top:0;
+    margin-bottom:0;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.45);
   }
 }
