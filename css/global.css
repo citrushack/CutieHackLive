@@ -122,7 +122,9 @@ tr {
 tr:first-child, td:first-child {
   background-color: #ffffff42;
 }
-
+td:hover{
+  background-color: #ffffff42;
+}
 th, td {
   font-weight: bold;
   color: #141414;
