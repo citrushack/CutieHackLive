@@ -20,6 +20,6 @@ var timer = setInterval(function () {
     document.getElementById("timer-secs").innerHTML =
       ("0" + secs).slice(-2) + "<span class='label'> Sec</span>";
   } else {
-    document.getElementById("timer").innerHTML = "The countdown is over!";
+    document.getElementById("timer").innerHTML = "Cutie Hack is Live!";
   }
 }, 1000);
