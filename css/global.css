@@ -4,7 +4,7 @@
 body {
   margin: 2rem auto 4rem;
   padding: 0 2rem;
-  color: #fff;
+  color: rgb(248, 248, 238);
   font-family: "Fugaz One", cursive;
   background: url(/images/backgrounds/cork.jpg);
   line-height: 1.6;
@@ -90,7 +90,7 @@ li {
   box-shadow: rgba(0, 0, 0, 0.45) 3px 3px 0px 0px;
   border-radius: 22px;
   font-family: "Fugaz One", cursive;
-  text-shadow: rgb(0, 0, 0) 1px 1px 0px, rgb(0, 0, 0) -1px -1px 0px, rgb(0, 0, 0) 1px -1px 0px, rgb(0, 0, 0) -1px 1px 0px, rgb(0, 0, 0) 2px 2px 0px;
+  text-shadow: #141414 1px 1px 0px, #141414 -1px -1px 0px, #141414 1px -1px 0px, #141414 -1px 1px 0px, #141414 2px 2px 0px;
   font-weight: 400;
   color: white;
 }
@@ -98,6 +98,16 @@ li {
   background: orange none repeat scroll 0% 0%;
 }
 /* Schedule */
+/* Workshop Links*/
+td a{
+ color: #141414;
+ text-decoration: underline;
+}
+td a:hover{
+  color: #58863a;
+  font-weight: bolder;
+  text-decoration: underline;
+ }
 .schedule {
   background-color: #f9f9ba;
   background-image: url(/images/backgrounds/asfalt-dark.png);
@@ -112,7 +122,7 @@ li {
 }
 table {
   max-width: 1200px;
-  background-color: #ffffff8f;
+  background-color: rgb(248, 248, 238);
   border-collapse: collapse;
 }
 
@@ -120,10 +130,10 @@ tr {
   text-align: center;
 }
 tr:first-child, td:first-child {
-  background-color: #ffffff42;
+  background-color: rgb(248, 248, 238);
 }
-td:hover{
-  background-color: #ffffff42;
+tr > a:hover{
+  background-color: rgba(236, 180, 140, 0.5);
 }
 th, td {
   font-weight: bold;
@@ -139,6 +149,17 @@ td:nth-child(2),
 td:nth-child(3),
 td:nth-child(4) {
   width: 33%;
+}
+i {
+  margin-left: 3%;
+}
+.room {
+  cursor: pointer;
+  width:100%;
+  height: 100%;
+}
+.nopadding{
+  padding:0;
 }
 /* Resources and Judges */
 
@@ -167,7 +188,7 @@ td:nth-child(4) {
 .resources h2 {
   background-color: #adde8e;
 box-shadow: 0 5px 0 #87b868;
-color: white;
+color: rgb(248, 248, 238);
 padding: 1em 1.5em;
 position: relative;
 color: #141414;
@@ -227,7 +248,7 @@ cursor: pointer;
   max-width: 75px;
   max-height: 75px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid rgb(248, 248, 238);
 }
 
 /* Sponsors */

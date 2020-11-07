@@ -1,285 +1,365 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Cutie Hack Live</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="The Live Site for Cutiehack." />
-		<meta name="author" content="Cutie Hack" />
-		<link rel="stylesheet" href="css/global.css" />
-	</head>
-	<body>
-		<main>
-			<!-- Top banner -->
-			<header>
-				<div class="title">
-					<img src="/images/logo/logo512.png" alt="Cutiehack Logo" />
-					<ul>
-						<li>
-							<a href="/">
-								<div class="navLink">Home</div>
-							</a>
-						</li>
-						<li>
-							<a href="/auth">
-								<div class="navLink">Login</div>
-							</a>
-						</li>
-						<li>
-							<a href="/apply">
-								<div class="navLink">Apply</div>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</header>
-			<!-- Countdown -->
-			<section class="clock">
-				<h1 id="timer">
-					<span id="timer-days">Loading...</span>
-					<span id="timer-hours"></span>
-					<span id="timer-mins"></span>
-					<span id="timer-secs"></span>
-				</h1>
-			</section>
-			<!-- Schedule -->
-			<section class="schedule">
-				<h1>Schedule</h1>
-				<div class="table">
-<table>
-	<tr >
-		<td colspan="4">November 7th</td>
-		</tr>
-	<tr >
-
-		<tr >
-		<td>Time (PST)</td><td>Workshop 1</td><td>Workshop 2</td><td>Activities</td>
-		</tr>
-		<tr >
-			<td>7:00 AM</td><td colspan="3">Opening Ceremony</td>
-			</tr>
-		<tr >
-			<td>8:00 AM</td><td colspan="3">Hacking Starts </td>
-			</tr>
-		<tr >
-			<tr >
-				<td>8:30 AM</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-				</tr>
-		<td>9:00 AM</td><td>Team Building </td><td>&nbsp;</td><td>Cutest Cutie Begins </td>
-		</tr>
-		<tr >
-		<td>9:30 AM</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>10:00 AM</td><td rowspan="2">Intro to Mobile Dev - Zubair </td><td rowspan="2">Intro to Git - Isaac</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>10:30 AM</td><td>🎉 🥳 🎉 ?</td>
-		</tr>
-		<tr >
-		<td>11:00 AM</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>11:30 AM</td><td rowspan="2">Intro to Web Development - Lucca</td><td rowspan="2">Intro to Linux - Anthony </td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>12:00 PM</td><td rowspan="2">Among Us (Win a Prize!)</td>
-		</tr>
-		<tr >
-		<td>12:30 PM</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>1:00 PM</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>1:30 PM</td><td rowspan="2">Productivity Workshop - Ellie &amp; Shreya</td><td rowspan="2">Intro to Data Visualization - Will Shiao</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>2:00 PM</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>2:30 PM</td><td>&nbsp;</td><td>&nbsp;</td><td>🎉 🥳 🎉 ?</td>
-		</tr>
-		<tr >
-		<td>3:00 PM</td><td rowspan="2">UI/UX - Janine</td><td rowspan="2">Industry work session - Raghav </td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>3:30 PM</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>4:00 PM</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>4:30 PM</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>5:00 PM</td><td>&nbsp;</td><td>&nbsp;</td><td>🎉 🥳 🎉 ?</td>
-		</tr>
-		<tr >
-		<td>5:30 PM</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>6:00 PM</td><td rowspan="4">How to Pitch Your Project - Professor LePendu</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>6:30 PM</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>7:00 PM</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>7:30 PM</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-			<td>8:00 PM</td><td colspan="3">Hacking Ends </td>
-			</tr>
-		<tr >
-		<tr >
-		<td>8:30 PM</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>9:00 PM</td><td>&nbsp;</td><td>&nbsp;</td><td>Cutest Cutie Ends (2 Winners)</td>
-		</tr>
-		<tr >
-		<td>9:30 PM</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>10:00 PM</td><td>&nbsp;</td><td>&nbsp;</td><td rowspan="3">Among Us (Win a a Prize!)</td>
-		</tr>
-		<tr >
-		<td>10:30 PM</td><td>&nbsp;</td><td>&nbsp;</td>
-		</tr>
-		<tr >
-		<td>11:00 PM</td><td colspan="2">Closing Ceremony</td>
-</table>
-				</div>
-			</section>
-			<!-- Resources & Judges -->
-			<section class="resources">
-				<h1>Resources</h1>
-				<div>
-					<p>Here are some useful links to help get you started:</p>
-					<a href="https://github.com/citrushack/2020CutiehackResources" target="_blank">
-						<h2>Technical Resources <img class="arrowIcon" src="https://cutiehack.io/images/assets/right-arrow.svg"></img></h2>
-					</a>
-					<a href="https://discord.gg/Ewxh57G" target="_blank">
-						<h2>Discord Server (where the event happens!) <img class="arrowIcon" src="https://cutiehack.io/images/assets/right-arrow.svg"></img></h2>
-					</a>
-				</div>
-			</section>
-			<section class="judges">
-				<h1>Judges</h1>
-				<!--Container for all the judges-->
-				<div class="judgeContainer">
-					<!--each judgeList consist of three judges-->
-					<div class="judgeList">
-						<!--individual judge-->
-						<div class="judge">
-							<img src="images/profiles/jed.jpg" alt="Jed Profile Picture" />
-							<p>
-								<b>Jed Schwendiman</b><br />
-								<i>Assistant Dean for Development</i>
-							</p>
-						</div>
-						<div class="judge">
-							<img
-								src="images/profiles/Lependu.jpg"
-								alt="Lependu Profile Picture"
-								/>
-							<p>
-								<b>Paea LePendu</b><br />
-								<i>Assistant Teaching Professor</i>
-							</p>
-						</div>
-						<div class="judge">
-							<img
-								src="images/profiles/poole.jpg"
-								alt="Poole Profile Picture"
-								/>
-							<p>
-								<b>Jacob Poole</b><br />
-								<i>Electrical Engineer at Applied Medical</i>
-							</p>
-						</div>
-					</div>
-					<div class="judgeList">
-						<div class="judge">
-							<img src="images/profiles/pham.jpg" alt="Pham Profile Picture" />
-							<p>
-								<b>John Pham</b><br />
-								<i>Senior Software Engineer at Smartsheet</i>
-							</p>
-						</div>
-						<div class="judge">
-							<img
-								src="images/profiles/crites.jpg"
-								alt="Crites Profile Picture"
-								/>
-							<p>
-								<b>Brian Crites</b><br />
-								<i>Backend Engineer at PiñataFarms</i>
-							</p>
-						</div>
-						<div class="judge">
-							<img
-								src="images/profiles/williamshiao.jpg"
-								alt="McDaniel Profile Picture"
-								/>
-							<p>
-								<b>William Shiao</b><br />
-								<i>PHD student</i>
-							</p>
-						</div>
-					</div>
-					<div class="judgeList">
-						<div class="judge">
-							<img
-								src="images/profiles/downey.jpg"
-								alt="Downey Profile Picture"
-								/>
-							<p>
-								<b>Kelly Downey</b><br />
-								<i>Lecturer</i>
-							</p>
-						</div>
-						<div class="judge">
-							<img
-								src="images/profiles/salloum.jpg"
-								alt="Salloum Profile Picture"
-								/>
-							<p>
-								<b>Mariam Salloum</b><br />
-								<i>Assistant Teaching Professor</i>
-							</p>
-						</div>
-						<div class="judge">
-							<img
-								src="images/profiles/goyal.jpg"
-								alt="Goyal Profile Picture"
-								/>
-							<p>
-								<b>Neal Goyal</b><br />
-								<i>Technical Product Manager at PayPal</i>
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Sponsors -->
-			<footer>
-				<h1>Sponsors</h1>
-				<div class="sponsors">
-					<a href="https://acmucr.org/"><img src="images/sponsors/acm_ucr.png" alt="ACM UCR Logo" /></a>
-					<a href="https://ieee.ee.ucr.edu/"><img src="images/sponsors/IEEE.png" alt="IEEE Logo" /></a>
-					<a href="https://linode.com/"><img src="images/sponsors/linode.png" alt="Linode Logo" /></a>
-					<a href="https://www.wolfram.com/"><img class="wolfram" src="images/sponsors/wolfram.png" alt="wolfram Logo" /></a>
-					<a href="https://gen.xyz/"><img src="images/sponsors/xcolor.png" alt="xyz Logo" /></a>
-					<a href="https://www.losangeles.spaceforce.mil/"><img class="usaf" src="images/sponsors/usaf.png" alt="LA Air Force Logo" /></a>
-					<a href="https://www.echoar.xyz/"><img src="images/sponsors/echoAR.png" alt="EchoAR Logo" /></a>
-				</div>
-			</footer>
-		</main>
-		<script src="js/scripts.js"></script>
-	</body>
+   <head>
+      <meta charset="utf-8" />
+      <title>Cutie Hack Live</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="The Live Site for Cutiehack." />
+      <meta name="author" content="Cutie Hack" />
+	  <link rel="stylesheet" href="css/global.css" />
+	  <script src="https://kit.fontawesome.com/7ed17e4826.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <main>
+         <!-- Top banner -->
+         <header>
+            <div class="title">
+               <img src="/images/logo/logo512.png" alt="Cutiehack Logo" />
+               <ul>
+                  <li>
+                     <a href="/">
+                        <div class="navLink">Home</div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="/auth">
+                        <div class="navLink">Login</div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="/apply">
+                        <div class="navLink">Apply</div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </header>
+         <!-- Countdown -->
+         <section class="clock">
+            <h1 id="timer">
+               <span id="timer-days">Loading...</span>
+               <span id="timer-hours"></span>
+               <span id="timer-mins"></span>
+               <span id="timer-secs"></span>
+            </h1>
+         </section>
+         <!-- Schedule -->
+         <section class="schedule">
+            <h1>Schedule</h1>
+            <div class="table">
+               <table>
+                  <tr >
+                     <td colspan="4">November 7th</td>
+                  </tr>
+                  <tr >
+                  <tr >
+                     <td>Time (PST)</td>
+					 <td class="nopadding"><a href="https://meet.google.com/mqh-uqsi-cwm"><div class="room">Workshop Room 1<i class="fas fa-arrow-right"></i></div></a></td>
+					 <td class="nopadding"><a href="https://meet.google.com/imq-ktwn-xfq"><div class="room">Workshop Room 2<i class="fas fa-arrow-right"></i></div></a></td>
+                     <td>Activities</td>
+                  </tr>
+                  <tr >
+                     <td>7:00 AM</td>
+                     <td colspan="3">Opening Ceremony</td>
+                  </tr>
+                  <tr >
+                     <td>8:00 AM</td>
+                     <td colspan="3">Hacking Starts </td>
+                  </tr>
+                  <tr >
+                  <tr >
+                     <td>8:30 AM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <td>9:00 AM</td>
+                  <td>Team Building </td>
+                  <td>&nbsp;</td>
+                  <td>Cutest Cutie Begins </td>
+                  </tr>
+                  <tr >
+                     <td>9:30 AM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>10:00 AM</td>
+                     <td rowspan="2">Intro to Mobile Dev - Zubair </td>
+                     <td rowspan="2">Intro to Git - Isaac</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>10:30 AM</td>
+                     <td>🎉 🥳 🎉 ?</td>
+                  </tr>
+                  <tr >
+                     <td>11:00 AM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>11:30 AM</td>
+                     <td rowspan="2">Intro to Web Development - Lucca</td>
+                     <td rowspan="2">Intro to Linux - Anthony </td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>12:00 PM</td>
+                     <td rowspan="2">Among Us (Win a Prize!)</td>
+                  </tr>
+                  <tr >
+                     <td>12:30 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>1:00 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>1:30 PM</td>
+                     <td rowspan="2">Productivity Workshop - Ellie &amp; Shreya</td>
+                     <td rowspan="2">Intro to Data Visualization - Will Shiao</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>2:00 PM</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>2:30 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>🎉 🥳 🎉 ?</td>
+                  </tr>
+                  <tr >
+                     <td>3:00 PM</td>
+                     <td rowspan="2">UI/UX - Janine</td>
+                     <td rowspan="2">Industry work session - Raghav </td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>3:30 PM</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>4:00 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>4:30 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>5:00 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>🎉 🥳 🎉 ?</td>
+                  </tr>
+                  <tr >
+                     <td>5:30 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>6:00 PM</td>
+                     <td rowspan="4">How to Pitch Your Project - Professor LePendu</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>6:30 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>7:00 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>7:30 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>8:00 PM</td>
+                     <td colspan="3">Hacking Ends </td>
+                  </tr>
+                  <tr >
+                  <tr >
+                     <td>8:30 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>9:00 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>Cutest Cutie Ends (2 Winners)</td>
+                  </tr>
+                  <tr >
+                     <td>9:30 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>10:00 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                     <td rowspan="3">Among Us (Win a a Prize!)</td>
+                  </tr>
+                  <tr >
+                     <td>10:30 PM</td>
+                     <td>&nbsp;</td>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr >
+                     <td>11:00 PM</td>
+                     <td colspan="2">Closing Ceremony</td>
+               </table>
+            </div>
+         </section>
+         <!-- Resources & Judges -->
+         <section class="resources">
+            <h1>Resources</h1>
+            <div>
+               <p>Here are some useful links to help get you started:</p>
+               <a href="https://github.com/citrushack/2020CutiehackResources" target="_blank">
+                  <h2>Technical Resources <img class="arrowIcon" src="https://cutiehack.io/images/assets/right-arrow.svg"></img></h2>
+               </a>
+               <a href="https://discord.gg/Ewxh57G" target="_blank">
+                  <h2>Discord Server (where the event happens!) <img class="arrowIcon" src="https://cutiehack.io/images/assets/right-arrow.svg"></img></h2>
+               </a>
+            </div>
+         </section>
+         <section class="judges">
+            <h1>Judges</h1>
+            <!--Container for all the judges-->
+            <div class="judgeContainer">
+               <!--each judgeList consist of three judges-->
+               <div class="judgeList">
+                  <!--individual judge-->
+                  <div class="judge">
+                     <img src="images/profiles/jed.jpg" alt="Jed Profile Picture" />
+                     <p>
+                        <b>Jed Schwendiman</b><br />
+                        <i>Assistant Dean for Development</i>
+                     </p>
+                  </div>
+                  <div class="judge">
+                     <img
+                        src="images/profiles/Lependu.jpg"
+                        alt="Lependu Profile Picture"
+                        />
+                     <p>
+                        <b>Paea LePendu</b><br />
+                        <i>Assistant Teaching Professor</i>
+                     </p>
+                  </div>
+                  <div class="judge">
+                     <img
+                        src="images/profiles/poole.jpg"
+                        alt="Poole Profile Picture"
+                        />
+                     <p>
+                        <b>Jacob Poole</b><br />
+                        <i>Electrical Engineer at Applied Medical</i>
+                     </p>
+                  </div>
+               </div>
+               <div class="judgeList">
+                  <div class="judge">
+                     <img src="images/profiles/pham.jpg" alt="Pham Profile Picture" />
+                     <p>
+                        <b>John Pham</b><br />
+                        <i>Senior Software Engineer at Smartsheet</i>
+                     </p>
+                  </div>
+                  <div class="judge">
+                     <img
+                        src="images/profiles/crites.jpg"
+                        alt="Crites Profile Picture"
+                        />
+                     <p>
+                        <b>Brian Crites</b><br />
+                        <i>Backend Engineer at PiñataFarms</i>
+                     </p>
+                  </div>
+                  <div class="judge">
+                     <img
+                        src="images/profiles/williamshiao.jpg"
+                        alt="McDaniel Profile Picture"
+                        />
+                     <p>
+                        <b>William Shiao</b><br />
+                        <i>PHD student</i>
+                     </p>
+                  </div>
+               </div>
+               <div class="judgeList">
+                  <div class="judge">
+                     <img
+                        src="images/profiles/downey.jpg"
+                        alt="Downey Profile Picture"
+                        />
+                     <p>
+                        <b>Kelly Downey</b><br />
+                        <i>Lecturer</i>
+                     </p>
+                  </div>
+                  <div class="judge">
+                     <img
+                        src="images/profiles/salloum.jpg"
+                        alt="Salloum Profile Picture"
+                        />
+                     <p>
+                        <b>Mariam Salloum</b><br />
+                        <i>Assistant Teaching Professor</i>
+                     </p>
+                  </div>
+                  <div class="judge">
+                     <img
+                        src="images/profiles/goyal.jpg"
+                        alt="Goyal Profile Picture"
+                        />
+                     <p>
+                        <b>Neal Goyal</b><br />
+                        <i>Technical Product Manager at PayPal</i>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Sponsors -->
+         <footer>
+            <h1>Sponsors</h1>
+            <div class="sponsors">
+               <a href="https://acmucr.org/"><img src="images/sponsors/acm_ucr.png" alt="ACM UCR Logo" /></a>
+               <a href="https://ieee.ee.ucr.edu/"><img src="images/sponsors/IEEE.png" alt="IEEE Logo" /></a>
+               <a href="https://linode.com/"><img src="images/sponsors/linode.png" alt="Linode Logo" /></a>
+               <a href="https://www.wolfram.com/"><img class="wolfram" src="images/sponsors/wolfram.png" alt="wolfram Logo" /></a>
+               <a href="https://gen.xyz/"><img src="images/sponsors/xcolor.png" alt="xyz Logo" /></a>
+               <a href="https://www.losangeles.spaceforce.mil/"><img class="usaf" src="images/sponsors/usaf.png" alt="LA Air Force Logo" /></a>
+               <a href="https://www.echoar.xyz/"><img src="images/sponsors/echoAR.png" alt="EchoAR Logo" /></a>
+            </div>
+         </footer>
+      </main>
+      <script src="js/scripts.js"></script>
+   </body>
 </html>
 
