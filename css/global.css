@@ -1,4 +1,4 @@
-/* Font */
+/*Font */
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');/* Global body styles */
 body {
@@ -150,7 +150,7 @@ td:nth-child(3),
 td:nth-child(4) {
   width: 33%;
 }
-i {
+td a nav {
   margin-left: 3%;
 }
 .room {
