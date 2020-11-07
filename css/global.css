@@ -161,6 +161,9 @@ i {
 .nopadding{
   padding:0;
 }
+.taller{
+  height: 5rem;
+}
 /* Resources and Judges */
 
 .resources,
